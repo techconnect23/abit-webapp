@@ -1,0 +1,65 @@
+<%- include('partials/header') %>
+
+<div class="container w-50">
+  <h4 class="mb-3">Register with us</h4>
+  <form class="needs-validation" action="#">
+    <div class="row g-3">
+      <!-- First Name -->
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">First name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="" value="" >
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+
+      <!-- Last Name -->
+      <div class="col-sm-6">
+        <label for="lastName" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="" value="">
+      </div>
+
+      <!-- Company Name -->
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">Company</label>
+        <input type="text" class="form-control" id="firstName" placeholder="" value="">
+      </div>
+
+      <!-- City -->
+      <div class="col-sm-6">
+        <label for="lastName" class="form-label">City</label>
+        <input type="text" class="form-control" id="lastName" placeholder="" value="">
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-12">
+        <label for="email" class="form-label">Email <span class="text-body-secondary">(*)</span></label>
+        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+        <div class="invalid-feedback">
+          Please enter a valid email address for shipping updates.
+        </div>
+      </div>
+
+      <!-- LinkedIn Profile URL -->
+      <div class="col-12">
+        <label for="linkedin" class="form-label">LinkedIn</label>
+        <input type="url" class="form-control" id="linkedin" placeholder="Link to your profile" required>
+        <div class="invalid-feedback">
+          Please enter a valid link.
+        </div>
+      </div>
+
+    <hr class="my-4">
+
+    <button class="w-50 btn btn-outline-primary btn-lg container-fluid " type="submit"
+    onclick="validateUrl()">Register</button>
+  </form>
+</div>
+
+<!-- Registration form - END -->
+<script src="./script/register.js"></script>
+
+<%- include('partials/footer') %>
