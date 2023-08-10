@@ -35,7 +35,7 @@
 
   <div class="container w-50">
     <h4 class="mb-3">Register with us</h4>
-    <form class="needs-validation" novalidate="">
+    <!-- <form class="needs-validation" novalidate=""> -->
       <div class="row g-3">
         <!-- First Name -->
         <div class="col-sm-6">
@@ -78,8 +78,8 @@
       
         <!-- LinkedIn Profile URL -->
         <div class="col-12">
-          <label for="email" class="form-label">LinkedIn<span class="text-body-secondary">(*)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="Link to your profile" required
+          <label for="linkedin" class="form-label">LinkedIn<span class="text-body-secondary">(*)</span></label>
+          <input class="form-control" id="linkedin" placeholder="Link to your profile" required
           pattern="/^(http(s)?:\/\/)?([\w]+\.)?linkedin\.com\/(pub|in|profile)\/([-a-zA-Z0-9]+)\/*/gm"
           title="Enter valid url">
           <div class="invalid-feedback">
@@ -89,9 +89,11 @@
 
       <hr class="my-4">
 
-      <button class="w-50 btn btn-outline-primary btn-lg container-fluid " type="submit">Register</button>
-    </form>
+      <button id="submitButton" class="w-50 btn btn-outline-primary btn-lg container-fluid " >Register</button>
+    <!-- </form> -->
   </div>
+
+  <script src="../../public/script/register.js" ></script>
 
   <!-- Registration form - END -->
 </body>
